@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="bg-gray-200 p-2 m-2 rounded-lg font-mono text-xs text-gray-900">
+        <p>.{breakpoint}:{...classes} breakpoint=sm|md|lg|xl</p>
+        <p>sm : 640px</p>
+        <p>md : 768px</p>
+        <p>lg : 1024px</p>
+        <p>xl : 1280px</p>
+        <p>
+          .{sm}:bg-*
+          .{sm}:w-*
+          .{sm}:h-*
+          .{sm}:p-*
+          .{sm}:m-*
+        </p>
+      </div>
+        <div class="bg-blue-500 text-white">
+          <div class="p-4 sm:p-32 sm:border">Some text inside</div>
+        </div>
+        <div class="bg-red-500 flex flex-col sm:flex-row justify-center">
+        <div class="w-32 h-32 bg-gray-200 border">A</div>
+        <div class="w-32 h-32 bg-gray-200 border">B</div>
+    </div>
+    </body>
+</html>
